@@ -16,8 +16,7 @@ public class WaitingMinigamePopup : Minigame
     
 
     void Start()
-    {
-        
+    {        
         PopupManager.AssignPopup(popup);
         Cycle();
     }

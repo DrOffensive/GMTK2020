@@ -28,6 +28,5 @@ public class SpotTheDifferencePopup : Minigame
     public void OnSolve()
     {
         PopupManager.ClosePopup(popup);
-
     }
 }
