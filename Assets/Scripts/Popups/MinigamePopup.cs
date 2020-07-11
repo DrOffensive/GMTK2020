@@ -11,7 +11,7 @@ public class MinigamePopup : BasePopup
     [SerializeField] RectTransform contentTransform;
     public override void Close()
     {
-        throw new System.NotImplementedException();
+        PopupManager.ClosePopup(this as MinigamePopup);
     }
 
     public override void Error()
@@ -22,6 +22,7 @@ public class MinigamePopup : BasePopup
     // Start is called before the first frame update
     void Start()
     {
+        closeButton.onClick.AddListener(() => Close());
         HideCloseButton = true;
     }
 
