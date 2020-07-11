@@ -32,10 +32,12 @@ public class MultiChoicePopup : BasePopup
             GenerateButtons(data.buttons);
             correctAnswer = data.correctAnswer;
         }
+        Show();
     }
 
     void GenerateButtons (string[] buttons)
     {
+        this.buttons = new MultiChoiceButton[buttons.Length];
         for(int i = 0; i < buttons.Length; i++)
         {
             this.buttons[i] = CreateButton(buttons[i], i);
