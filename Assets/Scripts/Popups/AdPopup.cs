@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using System.Security.Cryptography;
 
 public class AdPopup : BasePopup
 {
     [SerializeField] TextMeshProUGUI body;
-
+    [SerializeField] Image adImage;
     public override void Setup (BasePopup_Data popupData)
     {
         base.Setup(popupData);
@@ -15,6 +17,13 @@ public class AdPopup : BasePopup
         {
             if(body != null)
                 body.text = data.body;
+            if (adImage != null)
+            {
+                if (data.imageName != "")
+                    adImage.sprite = SpriteLoader.LoadSprite(data.imageName);
+                else
+                    GameObject.Destroy(adImage.gameObject);
+            }
         }
         Show();
     }

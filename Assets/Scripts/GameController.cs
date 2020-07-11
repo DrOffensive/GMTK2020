@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
+
     // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            PopupLoader.CreateRandomPopup();
+            PopupManager.AddPopup(PopupLoader.CreateRandomPopup());
         }
     }
 }

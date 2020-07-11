@@ -2,17 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpriteLoader : MonoBehaviour
+public static class SpriteLoader 
 {
-    // Start is called before the first frame update
-    void Start()
+    public static Sprite LoadSprite (string spritePath)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log(spritePath);
+        Texture2D resource = Resources.Load<Texture2D>(spritePath);
+        if (resource == null)
+            Debug.LogError("Couldn't load texture");
+            
+        Sprite sprite = Sprite.Create(resource, new Rect(0, 0, resource.width, resource.height), Vector2.one * .5f);
+        return sprite;
     }
 }

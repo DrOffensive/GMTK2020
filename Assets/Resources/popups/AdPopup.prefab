@@ -62,6 +62,7 @@ MonoBehaviour:
   header: {fileID: 1728782838686783204}
   closeButton: {fileID: 1026093112748428433}
   body: {fileID: 8170057988935744358}
+  adImage: {fileID: 1435803193489982177}
 --- !u!114 &1026093112811698172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,6 +88,7 @@ GameObject:
   - component: {fileID: 5645418348947316256}
   - component: {fileID: 1365938245896225033}
   - component: {fileID: 8170057988935744358}
+  - component: {fileID: 7803961310127147776}
   m_Layer: 5
   m_Name: BodyText
   m_TagString: Untagged
@@ -233,6 +235,26 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &7803961310127147776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624882614948989979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: 0.2
+  m_LayoutPriority: 1
 --- !u!114 &437381276089566250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,7 +272,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 1
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
@@ -313,6 +335,7 @@ GameObject:
   - component: {fileID: 3235814513772829709}
   - component: {fileID: 5541630892108791193}
   - component: {fileID: 1435803193489982177}
+  - component: {fileID: 8932914298240413577}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -376,6 +399,26 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8932914298240413577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8289003282613460303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: 130
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: 1
+  m_LayoutPriority: 1
 --- !u!1001 &1026093111301437689
 PrefabInstance:
   m_ObjectHideFlags: 0

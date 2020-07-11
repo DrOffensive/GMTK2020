@@ -22,17 +22,18 @@ public static class PopupLoader
         minigamePopupData = XMLLoader.LoadXML<MinigamePopups>(Application.dataPath + MINIGAME_POPUP_PATH);
     }
 
-    public static void CreateRandomPopup ()
+    public static BasePopup_Data CreateRandomPopup ()
     {
         int i = Random.Range(0, 2);
         switch (i)
         {
             case 0:
-                Create(adPopupData.Get());
-                break;
+                return adPopupData.Get();
+                
             case 1:
-                Create(minigamePopupData.Get());
-                break;
+                return minigamePopupData.Get();
+
+            default: return null;
         }
     }
 

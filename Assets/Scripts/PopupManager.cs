@@ -12,8 +12,11 @@ public static class PopupManager
 
     public static int Popups => popups.Count;
 
-    static void AddPopup (BasePopup_Data popup)
+    public static void AddPopup (BasePopup_Data popup)
     {
+        if (popups == null)
+            popups = new List<BasePopup>();
+
         if (popups.Count >= maxPopupsOnScreen)
             popupQueue.Enqueue(popup);
         else
