@@ -15,11 +15,12 @@ public class AdPopup : BasePopup
         {
             body.text = data.body;
         }
+        Show();
     }
 
     public override void Close()
     {
-        throw new System.NotImplementedException();
+        PopupManager.ClosePopup(this as BasePopup);
     }
 
     public override void Error()

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public static class PopupManager
@@ -17,23 +18,31 @@ public static class PopupManager
             popupQueue.Enqueue(popup);
         else
         {
-            /*popups.Add(popup);
-            popup.Show();*/
+            PopupLoader.Create(popup);
         }
     }
 
+    public static void AssignPopup (BasePopup popup)
+    {
+        if (popups == null)
+            popups = new List<BasePopup>();
+
+        popups.Add(popup);
+    }
 
     public static void ClosePopup (BasePopup popup)
     {
         if (popups == null)
             return;
 
-        if(popups.Contains(popup))
+        if (popups.Contains(popup))
+        {
             popups.Remove(popup);
-
+            GameObject.Destroy(popup.gameObject);
+        }
         if(popups.Count < maxPopupsOnScreen && popupQueue.Count > 0)
         {
-            popups.Add(popup);
+            PopupLoader.Create(popupQueue.Dequeue());
             //popup.Show();
         }
     }

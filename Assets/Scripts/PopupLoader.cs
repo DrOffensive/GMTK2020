@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class PopupLoader 
 {
-    const string AD_POPUP_PATH = "/popups/AdPopup.xml";
+    const string AD_POPUP_PATH = "/PopupData/AdPopups.xml";
     static AdPopups adPopupData;
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     static void Initialize ()
@@ -19,7 +19,7 @@ public static class PopupLoader
     }
 
 
-    static void Create(BasePopup_Data data)
+    public static void Create(BasePopup_Data data)
     {
         switch (data.popupType) {
             case PopupType.Ad:
@@ -36,7 +36,7 @@ public static class PopupLoader
         Ad, MultipleChoice, Catpcha
     }
 
-    public static BasePopup RequestPopup (PopupType type)
+    public static BasePopup_Data RequestPopup (PopupType type)
     {
         return null;
     }
