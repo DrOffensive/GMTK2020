@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <AdPopups xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Popups>
-    <AdPopup_Data HeaderText="Image test" Type="Ad" Width="400" Height="200" BodyText="Image Text" ImageName="popupImages\Ad1.png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="165" Height="200" BodyText="" ImageName="popupImages\Ad1.png" />
     <AdPopup_Data HeaderText="Topbar text" Type="Ad" Width="400" Height="200" BodyText="Body Text" ImageName="" />
     <AdPopup_Data HeaderText="Topbar text" Type="Ad" Width="400" Height="200" BodyText="Body Text" ImageName="" />
   </Popups>

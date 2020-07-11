@@ -6,6 +6,9 @@ public static class SpriteLoader
 {
     public static Sprite LoadSprite (string spritePath)
     {
+        if (spritePath.Contains("."))
+            spritePath = spritePath.Split('.')[0];
+
         Debug.Log(spritePath);
         Texture2D resource = Resources.Load<Texture2D>(spritePath);
         if (resource == null)
