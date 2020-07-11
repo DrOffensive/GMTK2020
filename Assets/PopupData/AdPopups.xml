@@ -1,8 +1,36 @@
 <?xml version="1.0"?>
 <AdPopups xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Popups>
-    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="165" Height="200" BodyText="" ImageName="popupImages\Ad1.png" />
-    <AdPopup_Data HeaderText="Topbar text" Type="Ad" Width="400" Height="200" BodyText="Body Text" ImageName="" />
-    <AdPopup_Data HeaderText="Topbar text" Type="Ad" Width="400" Height="200" BodyText="Body Text" ImageName="" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(1).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(2).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(3).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(4).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(5).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(6).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(7).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(8).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(9).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(10).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(11).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(12).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(13).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(14).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(15).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(16).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(17).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(18).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(19).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(20).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(21).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(22).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(23).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(24).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(25).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(26).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(27).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(28).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(29).png" />
+    <AdPopup_Data HeaderText="Ad" Type="Ad" Width="225" Height="300" BodyText="" ImageName="popupImages\Ads\Ad(30).png" />
+
   </Popups>
 </AdPopups>

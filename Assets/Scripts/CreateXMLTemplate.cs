@@ -11,12 +11,13 @@ public class CreateXMLTemplate : MonoBehaviour
 
     public enum TemplateToSave
     {
-        Ad, Minigame
+        Ad, Minigame, MultiChoice
     }
 
     public TemplateToSave templateToSave;
     public MinigamePopups minigamedata;
     public AdPopups adpopupdata;
+    public MultiChoicePopups multichoicepopupdata;
     public string path;
 
     public bool create = false;
@@ -35,6 +36,9 @@ public class CreateXMLTemplate : MonoBehaviour
                 case TemplateToSave.Minigame:
                     CreateMinigames();
                     break;
+                case TemplateToSave.MultiChoice:
+                    CreateMultiChoices();
+                    break;
             }
         }
     }
@@ -46,7 +50,12 @@ public class CreateXMLTemplate : MonoBehaviour
     }
     void CreateMinigames()
     {
-        XMLSaver.SaveXML(minigamedata, path, "Minigames");
+        XMLSaver.SaveXML(minigamedata, path, "MinigamePopups");
+        AssetDatabase.Refresh();
+    }
+    void CreateMultiChoices()
+    {
+        XMLSaver.SaveXML(multichoicepopupdata, path, "MultiChoicePopups");
         AssetDatabase.Refresh();
     }
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<MultiChoicePopups xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Popups>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Body text" Answer="1">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+  </Popups>
+</MultiChoicePopups>
