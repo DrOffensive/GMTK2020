@@ -15,6 +15,8 @@ public abstract class BasePopup : MonoBehaviour
 
     public event Action OnShow;
     
+    public bool HideCloseButton { set => closeButton.gameObject.SetActive(!value); }
+
     protected void Show ()
     {
         OnShow.Invoke();
