@@ -7,7 +7,7 @@ using UnityEngine;
 public class CreateXMLTemplate : MonoBehaviour
 {
 
-    public AdPopups data;
+    public MinigamePopups data;
     public string path;
 
     public bool create = false;
@@ -24,7 +24,7 @@ public class CreateXMLTemplate : MonoBehaviour
 
     void Create ()
     {
-        XMLSaver.SaveXML(data, path, "AdPopups");
+        XMLSaver.SaveXML(data, path, "MinigamePopups");
         AssetDatabase.Refresh();
     }
 }

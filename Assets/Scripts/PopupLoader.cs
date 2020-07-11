@@ -33,7 +33,7 @@ public static class PopupLoader
 
     public enum PopupType
     {
-        Ad, MultipleChoice, Catpcha
+        Ad, MultipleChoice, Minigame
     }
 
     public static BasePopup_Data RequestPopup (PopupType type)

@@ -191,8 +191,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.3434, y: 39.181}
-  m_SizeDelta: {x: 353.01123, y: 83.16232}
+  m_AnchoredPosition: {x: 0.000044823, y: 39.181}
+  m_SizeDelta: {x: 357.69812, y: 83.16232}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &192318352033280098
 CanvasRenderer:
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: If you're not a robot click "Close" when it appears within 3 sec.
+  m_text: If you're not a robot click "Close" when it appears within 3 seconds.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 057d8bc833f852040bfdbd16bdef94cc, type: 2}
   m_sharedMaterial: {fileID: -6381483721765880386, guid: 057d8bc833f852040bfdbd16bdef94cc,
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 257
+  m_textAlignment: 258
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -288,15 +288,15 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0.40631104, y: 0, z: 0.24092102, w: 0}
+  m_margin: {x: 10, y: 0, z: 10, w: 0}
   m_textInfo:
     textComponent: {fileID: 192318352033280097}
-    characterCount: 65
+    characterCount: 69
     spriteCount: 0
     spaceCount: 12
     wordCount: 13
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -539,7 +539,6 @@ MonoBehaviour:
   close_button_show_time: 3
   loader: {fileID: 192318352905587529}
   close_button: {fileID: 192318352132094606}
-  popup: {fileID: 0}
 --- !u!1 &192318352905587529
 GameObject:
   m_ObjectHideFlags: 0
