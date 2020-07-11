@@ -16,7 +16,7 @@ public static class XMLSaver
 
         try
         {
-            using (FileStream stream = new FileStream(fullPath, FileMode.OpenOrCreate))
+            using (FileStream stream = new FileStream(fullPath, FileMode.Create))
             {
                 serializer.Serialize(stream, data);
                 Debug.Log($"Saved {filename}.{filetype} to {fullPath}");

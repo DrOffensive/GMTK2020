@@ -32,10 +32,12 @@ public class MinigamePopup_Data : BasePopup_Data
         minigame = "";
     }
 
-    public MinigamePopup_Data(string header, string body, string minigameName)
+    public MinigamePopup_Data(string header, string body, string minigameName, Vector2 size)
     {
         this.Header = header;
         this.minigame = minigameName;
+        this.windowHeight = size.y;
+        this.windowWidth = size.x;
     }
     public MinigamePopup_Data(string fill)
     {

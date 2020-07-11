@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEditor;
 using UnityEngine;
 
@@ -7,7 +9,14 @@ using UnityEngine;
 public class CreateXMLTemplate : MonoBehaviour
 {
 
-    public MinigamePopups data;
+    public enum TemplateToSave
+    {
+        Ad, Minigame
+    }
+
+    public TemplateToSave templateToSave;
+    public MinigamePopups minigamedata;
+    public AdPopups adpopupdata;
     public string path;
 
     public bool create = false;
@@ -18,13 +27,26 @@ public class CreateXMLTemplate : MonoBehaviour
         if(create)
         {
             create = false;
-            Create();
+            switch(templateToSave)
+            {
+                case TemplateToSave.Ad:
+                    CreateAds();
+                    break;
+                case TemplateToSave.Minigame:
+                    CreateMinigames();
+                    break;
+            }
         }
     }
-
-    void Create ()
+    
+    void CreateAds ()
     {
-        XMLSaver.SaveXML(data, path, "MinigamePopups");
+        XMLSaver.SaveXML(adpopupdata, path, "AdPopups");
+        AssetDatabase.Refresh();
+    }
+    void CreateMinigames()
+    {
+        XMLSaver.SaveXML(minigamedata, path, "Minigames");
         AssetDatabase.Refresh();
     }
 }

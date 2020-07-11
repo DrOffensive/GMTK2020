@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <MinigamePopups xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Popups>
-    <MinigamePopup_Data HeaderText="The waiting game" Type="Minigame" Minigame="WaitingMinigame" />
+    <MinigamePopup_Data HeaderText="Are you a robot ?" Type="Minigame" Width="400" Height="300" Minigame="WaitingMinigame" />
   </Popups>
 </MinigamePopups>

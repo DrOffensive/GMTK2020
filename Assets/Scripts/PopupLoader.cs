@@ -5,30 +5,53 @@ using UnityEngine;
 public static class PopupLoader 
 {
     const string AD_POPUP_PATH = "/PopupData/AdPopups.xml";
+    const string MINIGAME_POPUP_PATH = "/PopupData/MinigamePopups.xml";
     static AdPopups adPopupData;
+    static MinigamePopups minigamePopupData;
+
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     static void Initialize ()
     {
         LoadPopupData();
-        Create(adPopupData.Get());
+        //Create(minigamePopupData.Get());
     }
 
     static void LoadPopupData ()
     {
         adPopupData = XMLLoader.LoadXML<AdPopups>(Application.dataPath + AD_POPUP_PATH);
+        minigamePopupData = XMLLoader.LoadXML<MinigamePopups>(Application.dataPath + MINIGAME_POPUP_PATH);
     }
 
+    public static void CreateRandomPopup ()
+    {
+        int i = Random.Range(0, 2);
+        switch (i)
+        {
+            case 0:
+                Create(adPopupData.Get());
+                break;
+            case 1:
+                Create(minigamePopupData.Get());
+                break;
+        }
+    }
 
     public static void Create(BasePopup_Data data)
     {
         switch (data.popupType) {
             case PopupType.Ad:
-                UnityEngine.Object prefab = Resources.Load("popups/AdPopup");
-                BasePopup instance = (prefab as GameObject).GetComponent<BasePopup>() ?? null;
-                AdPopup popup = GameObject.Instantiate(instance, PopupCanvas.RectTransform) as AdPopup;
-                popup.Setup(data);
+                UnityEngine.Object adprefab = Resources.Load("popups/AdPopup");
+                BasePopup adinstance = (adprefab as GameObject).GetComponent<BasePopup>() ?? null;
+                AdPopup adpopup = GameObject.Instantiate(adinstance, PopupCanvas.RectTransform) as AdPopup;
+                adpopup.Setup(data);
                 break;
-    }
+            case PopupType.Minigame:
+                UnityEngine.Object minigameprefab = Resources.Load("popups/MinigamePopup");
+                BasePopup minigameinstance = (minigameprefab as GameObject).GetComponent<BasePopup>() ?? null;
+                MinigamePopup minigamepopup = GameObject.Instantiate(minigameinstance, PopupCanvas.RectTransform) as MinigamePopup;
+                minigamepopup.Setup(data);
+                break;
+        }
     }
 
     public enum PopupType

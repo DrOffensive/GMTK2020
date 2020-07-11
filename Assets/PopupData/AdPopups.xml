@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <AdPopups xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Popups>
-    <AdPopup_Data HeaderText="Window1" BodyText="Det her er noget tekst" ImageName="sub-folder/img.png" />
-    <AdPopup_Data HeaderText="Window2" BodyText="Det her er noget andet tekst" ImageName="sub-folder/img.png" />
-    <AdPopup_Data HeaderText="Jørgen" BodyText="Hvad faen' sker der?" ImageName="sub-folder/img.png" />
+    <AdPopup_Data HeaderText="Topbar text" Type="Ad" Width="400" Height="200" BodyText="Body Text" ImageName="Subfolder/subsubfolder/img.png" />
+    <AdPopup_Data HeaderText="Topbar text" Type="Ad" Width="400" Height="200" BodyText="Body Text" ImageName="Subfolder/subsubfolder/img.png" />
+    <AdPopup_Data HeaderText="Topbar text" Type="Ad" Width="400" Height="200" BodyText="Body Text" ImageName="Subfolder/subsubfolder/img.png" />
   </Popups>
 </AdPopups>

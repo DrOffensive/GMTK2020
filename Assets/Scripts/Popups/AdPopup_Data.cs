@@ -43,6 +43,15 @@ public class AdPopup_Data : BasePopup_Data
         this.body = body;
         this.imageName = imageName;
     }
+    public AdPopup_Data(string header, string body, string imageName, Vector2 size)
+    {
+        this.Header = header;
+        this.body = body;
+        this.imageName = imageName;
+        this.windowWidth = size.x;
+        this.windowHeight = size.y;
+    }
+
     public AdPopup_Data(string fill)
     {
         this.Header = fill;

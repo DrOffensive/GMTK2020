@@ -13,7 +13,8 @@ public class AdPopup : BasePopup
         AdPopup_Data data = (AdPopup_Data)popupData ?? null;
         if(data!=null)
         {
-            body.text = data.body;
+            if(body != null)
+                body.text = data.body;
         }
         Show();
     }

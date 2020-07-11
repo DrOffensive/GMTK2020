@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 public class MinigamePopup : BasePopup
 {
 
-    const string MINIGAME_PATH = "/minigames/";
+    const string MINIGAME_PATH = "minigames/";
     [SerializeField] RectTransform contentTransform;
     public override void Close()
     {
@@ -31,7 +31,8 @@ public class MinigamePopup : BasePopup
         if (popupData is MinigamePopup_Data)
         {
             MinigamePopup_Data minigamedata = (MinigamePopup_Data)popupData;
-            Instantiate(LoadMinigame(minigamedata.minigame), contentTransform);
+            Minigame minigame = Instantiate(LoadMinigame(minigamedata.minigame), contentTransform);
+            minigame.Initialize(this);
             Show();
         }
     }
