@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<AdPopups xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Popups>
+    <AdPopup_Data HeaderText="header" BodyText="body" ImageName="sub-folder/img.png" />
+    <AdPopup_Data HeaderText="header" BodyText="body" ImageName="sub-folder/img.png" />
+    <AdPopup_Data HeaderText="header" BodyText="body" ImageName="sub-folder/img.png" />
+  </Popups>
+</AdPopups>
