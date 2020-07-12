@@ -5,6 +5,7 @@ using System.Xml.Serialization;
 using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
 [ExecuteAlways]
 public class CreateXMLTemplate : MonoBehaviour
 {
@@ -59,3 +60,4 @@ public class CreateXMLTemplate : MonoBehaviour
         AssetDatabase.Refresh();
     }
 }
+#endif

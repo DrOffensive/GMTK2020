@@ -25,6 +25,7 @@ public class MultiChoicePopup : BasePopup
     public override void Setup(BasePopup_Data popupData)
     {
         base.Setup(popupData);
+        HideCloseButton = true;
         MultiChoicePopup_Data data = (MultiChoicePopup_Data)popupData ?? null;
         if (data != null)
         {
