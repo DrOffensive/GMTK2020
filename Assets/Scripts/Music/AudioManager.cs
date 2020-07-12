@@ -26,7 +26,7 @@ public class AudioManager : MonoBehaviour
     {
         //StartPlayingMusic();
 
-        GameController.OnGameStarted += () => { StartPlayingMusic(); };
+        GameController.instance.OnGameStarted += () => { StartPlayingMusic(); };
 
         PopupManager.OnPopupCreated += (popup) => {
             
