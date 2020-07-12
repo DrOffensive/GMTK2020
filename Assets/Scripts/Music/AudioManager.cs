@@ -80,7 +80,7 @@ public class AudioManager : MonoBehaviour
     public IEnumerator PlayTransition() {
         
         AudioSource component = GetComponent<AudioSource>();
-        yield return new WaitForSeconds(component.clip.length-1f);
+        yield return new WaitForSeconds(component.clip.length);
         component.clip = main2;
         component.Play();
         StartCoroutine(PlayDistortion());
@@ -88,7 +88,7 @@ public class AudioManager : MonoBehaviour
     public IEnumerator PlayDistortion()
     {        
         AudioSource component = GetComponent<AudioSource>();
-        yield return new WaitForSeconds(component.clip.length -4f);
+        yield return new WaitForSeconds(component.clip.length);
         component.clip = main3;
         component.loop = true;
         component.Play();        
