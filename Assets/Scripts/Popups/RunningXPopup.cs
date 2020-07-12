@@ -19,7 +19,7 @@ public class RunningXPopup : Minigame
 
     void Start()
     {
-        PopupManager.AssignPopup(popup);
+        //PopupManager.AssignPopup(popup);
         variant = Random.Range(0, 2);
         Teleport();
         if (variant == 1) {

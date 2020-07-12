@@ -15,7 +15,7 @@ public class SpotTheDifferencePopup : Minigame
     // Start is called before the first frame update
     void Start()
     {
-        PopupManager.AssignPopup(popup);
+        //PopupManager.AssignPopup(popup);
         popup.HideCloseButton = true;
         image_changed.sprite = image_changed.sprite = sprite_spot;
         button_difference.image.sprite = sprite_difference;

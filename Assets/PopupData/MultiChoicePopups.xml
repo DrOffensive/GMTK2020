@@ -67,7 +67,7 @@
         <string>Everything</string>
       </Buttons>
     </MultiChoicePopup_Data>
-    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Have you brushed your teeth?" Answer="1>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Have you brushed your teeth?" Answer="1">
       <Buttons>
         <string>yes</string>
         <string>no</string>
@@ -217,7 +217,7 @@
         <string>no</string>
       </Buttons>
     </MultiChoicePopup_Data>
-    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Did Epstein kill himself?" Answer="0">
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Did Epstein kill himself?" Answer="1">
       <Buttons>
         <string>yes</string>
         <string>no</string>

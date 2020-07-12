@@ -1,6 +1,11 @@
 <?xml version="1.0"?>
 <MinigamePopups xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Popups>
-    <MinigamePopup_Data HeaderText="Are you a robot ?" Type="Minigame" Width="400" Height="300" Minigame="WaitingMinigame" />
+    <MinigamePopup_Data HeaderText="Are you a robot ?" Type="Minigame" Width="400" Height="400" Minigame="WaitingMinigame" />
+    <MinigamePopup_Data HeaderText="Are you a robot ?" Type="Minigame" Width="400" Height="400" Minigame="SpotTheDifferenceMinigame" />
+    <MinigamePopup_Data HeaderText="Are you a robot ?" Type="Minigame" Width="400" Height="400" Minigame="RunningX" />
+    <MinigamePopup_Data HeaderText="Are you a robot ?" Type="Minigame" Width="400" Height="400" Minigame="KeyCombinationMinigame" />
+    <MinigamePopup_Data HeaderText="Are you a robot ?" Type="Minigame" Width="400" Height="400" Minigame="CloseBeforeTimeoutMinigame" />
+    <MinigamePopup_Data HeaderText="Are you a robot ?" Type="Minigame" Width="400" Height="400" Minigame="ClickCorrectButton" />
   </Popups>
 </MinigamePopups>

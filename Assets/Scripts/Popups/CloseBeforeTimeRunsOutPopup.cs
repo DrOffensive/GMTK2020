@@ -15,7 +15,7 @@ public class CloseBeforeTimeRunsOutPopup : Minigame
     // Start is called before the first frame update
     void Start()
     {
-        PopupManager.AssignPopup(popup);
+        //PopupManager.AssignPopup(popup);
         popup.HideCloseButton = false;
         timer.text = ((int)time).ToString();
         time = Random.Range((int)min_time, (int)max_time);

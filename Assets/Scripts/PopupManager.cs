@@ -7,7 +7,7 @@ public static class PopupManager
 {
 
     static List<BasePopup> popups;
-    static int maxPopupsOnScreen = 10;
+    static int maxPopupsOnScreen = 20;
     static Queue<BasePopup_Data> popupQueue = new Queue<BasePopup_Data>();
 
     public static int Popups => popups.Count;

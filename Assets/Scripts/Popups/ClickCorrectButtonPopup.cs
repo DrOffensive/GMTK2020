@@ -22,7 +22,7 @@ public class ClickCorrectButtonPopup : Minigame
     {
         current = -1;
         Shuffle();
-        PopupManager.AssignPopup(popup);
+        //PopupManager.AssignPopup(popup);
     }
 
   

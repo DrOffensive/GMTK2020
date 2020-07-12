@@ -11,7 +11,7 @@ public class KeyCombinationPopup : Minigame
 
     void Start()
     {
-        PopupManager.AssignPopup(popup);
+        //PopupManager.AssignPopup(popup);
         variant = Random.Range(0, 5);
         Init();
     }
