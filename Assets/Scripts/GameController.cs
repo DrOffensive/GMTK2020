@@ -7,9 +7,10 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+    public static GameController instance;
     static bool running;
     public static bool Running { get => running; set => running = value; }
-
+    [SerializeField] float transitionSpeed = 1f;
     [SerializeField] Vector2 intervalRange;
     float next;
     [SerializeField] Vector2Int popupRange;
@@ -24,8 +25,11 @@ public class GameController : MonoBehaviour
 
     [SerializeField] AudioClip transition;
 
+    public event System.Action OnGameStarted;
+
     private void Start()
     {
+        instance = this;
         quitButton.ClickAction = () =>
         {
             Application.Quit();
@@ -48,22 +52,24 @@ public class GameController : MonoBehaviour
         while(t < 2)
         {
             t += Time.deltaTime;
-            float p = 1f / 2 * t;
+            float p = 1f / transitionSpeed * t;
             transitionFader.color = new Color(transitionFader.color.r, transitionFader.color.g, transitionFader.color.b, p);
             yield return new WaitForEndOfFrame();
         }
         transitionFader.color = new Color(transitionFader.color.r, transitionFader.color.g, transitionFader.color.b, 1);
         startScreen.gameObject.SetActive(false);
         t = 0;
+        bool started = false;
         while (t < 2)
         {
             t += Time.deltaTime;
-            float p = 1f / 2 * t;
+            float p = 1f / transitionSpeed * t;
             transitionFader.color = new Color(transitionFader.color.r, transitionFader.color.g, transitionFader.color.b, 1f-p);
             yield return new WaitForEndOfFrame();
         }
-        yield return new WaitForSeconds(2);
+        OnGameStarted?.Invoke();
         running = true;
+        SpawnPopups();
     }
 
     // Update is called once per frame
@@ -71,7 +77,7 @@ public class GameController : MonoBehaviour
     {
         if(running)
         {
-            if(Time.realtimeSinceStartup >= next)
+            if(Time.realtimeSinceStartup >= next || PopupManager.Popups == 0)
             {
                 next = Time.realtimeSinceStartup + (Random.Range(intervalRange.x, intervalRange.y));
                 SpawnPopups();
