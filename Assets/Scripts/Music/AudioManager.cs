@@ -31,6 +31,7 @@ public class AudioManager : MonoBehaviour
             }
             if (counter > 5) {
                 CreateJingle(popup);
+                counter = 0;
             }
 
                 CreateShowSound();
