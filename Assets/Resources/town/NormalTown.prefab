@@ -219,4 +219,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteto_lerp: {fileID: 6574131332999393199}
-  time: 360
+  time: 720
