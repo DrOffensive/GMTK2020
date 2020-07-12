@@ -13,7 +13,10 @@ public class DragWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public void OnPointerDown(PointerEventData eventData)
     {
         if (eventData.button == PointerEventData.InputButton.Left)
+        { 
             BeginDrag();
+            PopupCanvas.instance.Focus(windowBox);
+        }
     }
 
     public void OnPointerUp(PointerEventData eventData)

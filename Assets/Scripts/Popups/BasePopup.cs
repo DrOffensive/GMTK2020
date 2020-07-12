@@ -28,8 +28,8 @@ public abstract class BasePopup : MonoBehaviour
     public virtual void Setup (BasePopup_Data popupData)
     {
         window.sizeDelta = popupData.WindowSize;
-        float x = UnityEngine.Random.Range(0, Screen.width);
-        float y = UnityEngine.Random.Range(Screen.height / 2, Screen.height);
+        float x = UnityEngine.Random.Range(0, Screen.width - popupData.windowHeight/2);
+        float y = UnityEngine.Random.Range(Screen.height / 2, Screen.height- popupData.windowHeight/2);
         OnShow += () => 
         {
             StartCoroutine(ShowAnimation(new Vector2(x, y), .25f));
