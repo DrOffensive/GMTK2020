@@ -11,6 +11,7 @@ public static class PopupLoader
     static MinigamePopups minigamePopupData;
     static MultiChoicePopups multiChoicePopupData;
 
+
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     static void Initialize ()
     {

@@ -10,6 +10,7 @@ public static class PopupManager
     static int maxPopupsOnScreen = 20;
     static Queue<BasePopup_Data> popupQueue = new Queue<BasePopup_Data>();
 
+    public static event System.Action<BasePopup> OnPopupCreated;
     public static int Popups => popups.Count;
 
     public static void AddPopup (BasePopup_Data popup)
@@ -31,6 +32,7 @@ public static class PopupManager
             popups = new List<BasePopup>();
 
         popups.Add(popup);
+        OnPopupCreated?.Invoke(popup);
     }
 
     public static void ClosePopup (BasePopup popup)
