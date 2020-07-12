@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+    public static GameController instance;
     static bool running;
     public static bool Running { get => running; set => running = value; }
 
@@ -24,8 +25,11 @@ public class GameController : MonoBehaviour
 
     [SerializeField] AudioClip transition;
 
+    public event System.Action OnGameStarted;
+
     private void Start()
     {
+        instance = this;
         quitButton.ClickAction = () =>
         {
             Application.Quit();
@@ -63,6 +67,7 @@ public class GameController : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         yield return new WaitForSeconds(2);
+        OnGameStarted?.Invoke();
         running = true;
     }
 
