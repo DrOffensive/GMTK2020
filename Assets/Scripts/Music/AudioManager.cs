@@ -13,6 +13,8 @@ public class AudioManager : MonoBehaviour
 
     public int current_note = 0;
     public int max_note = 6;
+    public int counter = 0;
+    
 
     public List<AudioClip> sounds_severity1;
     public List<AudioClip> sounds_severity2;
@@ -23,7 +25,16 @@ public class AudioManager : MonoBehaviour
     public void Awake()
     {
         StartPlayingMusic();
+        PopupManager.OnPopupCreated += (popup) => {
+            if (popup is MinigamePopup) {
+                counter++;
+            }
+            if (counter > 5) {
+                CreateJingle(popup);
+            }
 
+                CreateShowSound();
+            };
 
     }
 
@@ -34,11 +45,6 @@ public class AudioManager : MonoBehaviour
         StartCoroutine(PlayTransition());
     }
 
-    public void Update() {
-        if (Input.GetButtonDown("Jump"))
-            CreateShowSound();
-
-    }
 
 
     public void CreateShowSound() {
@@ -73,16 +79,15 @@ public class AudioManager : MonoBehaviour
     public IEnumerator PlayTransition() {
         
         AudioSource component = GetComponent<AudioSource>();
-        yield return new WaitForSeconds(component.clip.length);
+        yield return new WaitForSeconds(component.clip.length-0.3f);
         component.clip = main2;
         component.Play();
         StartCoroutine(PlayDistortion());
     }
     public IEnumerator PlayDistortion()
-    {
-        
+    {        
         AudioSource component = GetComponent<AudioSource>();
-        yield return new WaitForSeconds(component.clip.length);
+        yield return new WaitForSeconds(component.clip.length - 0.3f);
         component.clip = main3;
         component.loop = true;
         component.Play();        
