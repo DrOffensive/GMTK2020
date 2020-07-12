@@ -24,7 +24,7 @@ public class AudioManager : MonoBehaviour
 
     public void Awake()
     {
-        StartPlayingMusic();
+        //StartPlayingMusic();
 
         PopupManager.OnPopupCreated += (popup) => {
             
