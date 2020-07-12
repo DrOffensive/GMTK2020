@@ -44,6 +44,26 @@ public class GameController : MonoBehaviour
         introAudioSource.clip = transition;
         introAudioSource.Play();
         yield return new WaitForSeconds(transition.length);
+        float t = 0;
+        while(t < 2)
+        {
+            t += Time.deltaTime;
+            float p = 1f / 2 * t;
+            transitionFader.color = new Color(transitionFader.color.r, transitionFader.color.g, transitionFader.color.b, p);
+            yield return new WaitForEndOfFrame();
+        }
+        transitionFader.color = new Color(transitionFader.color.r, transitionFader.color.g, transitionFader.color.b, 1);
+        startScreen.gameObject.SetActive(false);
+        t = 0;
+        while (t < 2)
+        {
+            t += Time.deltaTime;
+            float p = 1f / 2 * t;
+            transitionFader.color = new Color(transitionFader.color.r, transitionFader.color.g, transitionFader.color.b, 1f-p);
+            yield return new WaitForEndOfFrame();
+        }
+        yield return new WaitForSeconds(2);
+        running = true;
     }
 
     // Update is called once per frame
@@ -56,6 +76,11 @@ public class GameController : MonoBehaviour
                 next = Time.realtimeSinceStartup + (Random.Range(intervalRange.x, intervalRange.y));
                 SpawnPopups();
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            running = !running;
         }
 
         if(Input.GetKeyDown(KeyCode.Escape))
