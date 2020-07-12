@@ -1,7 +1,445 @@
 <?xml version="1.0"?>
 <MultiChoicePopups xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Popups>
-    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Please select yes" Answer="0">
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Are you sure you want to play the game?" Answer="1">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Did you have breakfast this morning?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Are you left-handed?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Did you just click Yes?" Answer="1">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Did you just click No?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="What time is it?" Answer="0">
+      <Buttons>
+        <string>Too Early</string>
+        <string>Too Late</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Have you looked at the options?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Restart?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Try Again?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Give Up?" Answer="1">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="What's wrong?" Answer="0">
+      <Buttons>
+        <string>Nothing</string>
+        <string>Everything</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Have you brushed your teeth?" Answer="1>
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="What's your relationship like with your mother?" Answer="0">
+      <Buttons>
+        <string>Good</string>
+        <string>Bad</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="How did your last relationship end?" Answer="0">
+      <Buttons>
+        <string>I left them</string>
+        <string>They left me</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Dogs or Cats?" Answer="0">
+      <Buttons>
+        <string>Dogs</string>
+        <string>Cats</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Your computer will now restart" Answer="0">
+      <Buttons>
+        <string>Why</string>
+        <string>What</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Red Pill or Blue Pill" Answer="0">
+      <Buttons>
+        <string>Red</string>
+        <string>Blue</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Is this all a dream??" Answer="1">
+      <Buttons>
+        <string>Probably</string>
+        <string>Who Knows</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Did you ever judge someone for the dark secrets they told you?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Only a Sith Deals in absolutes" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Hello there" Answer="0">
+      <Buttons>
+        <string>General</string>
+        <string>Kenobi</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Would you relocate for love?" Answer="1">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Are you still in touch with your childhood friends?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Do you believe in soul mates??" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="No you believe in love at first sight?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Have you ever seen a UFO?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Can you see the moon?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Can you swim?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Have you ever stolen anything?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Have you ever been in a fight?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Are you lost?" Answer="1">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Click Here" Answer="0">
+      <Buttons>
+        <string>Here</string>
+        <string>Here</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Was this a mistake?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Have you done drugs?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Do you sing in the shower?" Answer="1">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Have you ever broken a bone?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Did Epstein kill himself?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Left or Right" Answer="0">
+      <Buttons>
+        <string>Left</string>
+        <string>Right</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Up or Down" Answer="1">
+      <Buttons>
+        <string>Up</string>
+        <string>Down</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Hot or Cold" Answer="1">
+      <Buttons>
+        <string>Hot</string>
+        <string>Cold</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Chicken or Egg" Answer="1">
+      <Buttons>
+        <string>Chicken</string>
+        <string>Egg</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Did you flush?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Are you sitting comfortably" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Did you hear that?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Is the earth flat?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Did you agree to the licencing agreement?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Have you pre-ordered?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Are you using an ad-blocker?" Answer="1">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Are pop-ups annoying?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Grant permissions to scan all your cookies?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Grant permissions to read your diary?" Answer="1">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Grant permissions to read all your files?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Grant permissions to send your boss a snarky email?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Grant permissions to take a selfie?" Answer="1">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Grant permissions to take a blood sample?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Grant permissions to take access your childhood memories" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Grant permissions to your soul?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Download day 1 patch?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Download some malware?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Download a tasty treat?" Answer="1">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Will you come to my birthday party?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Are you having fun?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Can I tell you something?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Do you like me?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Can I tell you a secret?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Is it secret? Is it safe?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="More or Less?" Answer="1">
+      <Buttons>
+        <string>More</string>
+        <string>Less</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Higher or Lower?" Answer="0">
+      <Buttons>
+        <string>Higher</string>
+        <string>Lower</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Did you shut the door?" Answer="1">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Did you leave the light on?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Delete random files?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Who did you tell?" Answer="0">
+      <Buttons>
+        <string>No One</string>
+        <string>Everyone</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Do you need two Kidneys to live?" Answer="0">
+      <Buttons>
+        <string>yes</string>
+        <string>no</string>
+      </Buttons>
+    </MultiChoicePopup_Data>
+    <MultiChoicePopup_Data HeaderText="Select yes" Type="MultipleChoice" Width="300" Height="200" BodyText="Do Aliens exist?" Answer="0">
       <Buttons>
         <string>yes</string>
         <string>no</string>
