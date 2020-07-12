@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -12,7 +13,39 @@ public class GameController : MonoBehaviour
     [SerializeField] Vector2 intervalRange;
     float next;
     [SerializeField] Vector2Int popupRange;
-    [SerializeField] TextMeshProUGUI debugText;
+
+    [SerializeField] RectTransform startScreen;
+    [SerializeField] Image transitionFader;
+    [SerializeField] IntroScreenButton startButton, quitButton;
+
+    [SerializeField] AudioSource introAudioSource;
+
+    Coroutine startAnimation;
+
+    [SerializeField] AudioClip transition;
+
+    private void Start()
+    {
+        quitButton.ClickAction = () =>
+        {
+            Application.Quit();
+        };
+        startButton.ClickAction = () =>
+        {
+            if(startAnimation==null)
+            {
+                startAnimation = StartCoroutine(StartAnimation());
+            }
+        };
+    }
+
+    IEnumerator StartAnimation ()
+    {
+        introAudioSource.clip = transition;
+        introAudioSource.Play();
+        yield return new WaitForSeconds(transition.length);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -23,13 +56,6 @@ public class GameController : MonoBehaviour
                 next = Time.realtimeSinceStartup + (Random.Range(intervalRange.x, intervalRange.y));
                 SpawnPopups();
             }
-        }
-
-        //for debugging
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            running = !running;
-            debugText.text = running ? "Running" : "Stopped";
         }
 
         if(Input.GetKeyDown(KeyCode.Escape))
