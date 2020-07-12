@@ -56,6 +56,12 @@ public class MultiChoicePopup : BasePopup
 
     void Answer (int answer)
     {
+        if(correctAnswer == -1)
+        { 
+            Close();
+            return;
+        }    
+
         if (answer == correctAnswer)
             Close();
         else

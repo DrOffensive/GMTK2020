@@ -11,12 +11,25 @@ public struct AdPopups
     [SerializeField]
     public AdPopup_Data[] popups;
 
+    List<AdPopup_Data> included;
+
     public AdPopup_Data Get ()
     {
+        if(included == null ||included.Count < 1)
+        {
+            included = new List<AdPopup_Data>();
+            foreach(AdPopup_Data pop in popups)
+            {
+                included.Add(pop);
+            }
+        }
+
         if (popups == null || popups.Length < 1)
             return null;
-        int index = Random.Range(0, popups.Length);
-        return popups[index];
+        int index = Random.Range(0, included.Count);
+        AdPopup_Data popup = included[index];
+        included.Remove(popup);
+        return popup;
     }
 }
 

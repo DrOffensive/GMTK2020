@@ -88,7 +88,6 @@ GameObject:
   - component: {fileID: 5645418348947316256}
   - component: {fileID: 1365938245896225033}
   - component: {fileID: 8170057988935744358}
-  - component: {fileID: 7803961310127147776}
   m_Layer: 5
   m_Name: BodyText
   m_TagString: Untagged
@@ -171,12 +170,12 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 15
+  m_fontSize: 30
   m_fontSizeBase: 15
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 30
   m_fontStyle: 1
   m_textAlignment: 514
   m_characterSpacing: 0
@@ -235,13 +234,13 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &7803961310127147776
+--- !u!114 &199852318934583448
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1624882614948989979}
+  m_GameObject: {fileID: 4276285738851363216}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
@@ -249,11 +248,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
-  m_MinHeight: -1
+  m_MinHeight: 80
   m_PreferredWidth: -1
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
-  m_FlexibleHeight: 0.2
+  m_FlexibleHeight: -1
   m_LayoutPriority: 1
 --- !u!114 &437381276089566250
 MonoBehaviour:
@@ -737,6 +736,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17ecd0a451e6cf143af9dac7f1c9ec6c, type: 3}
+--- !u!1 &4276285738851363216 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4922203950847903750, guid: 17ecd0a451e6cf143af9dac7f1c9ec6c,
+    type: 3}
+  m_PrefabInstance: {fileID: 9157864590403281302}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5237187920079541088 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4015381251448074998, guid: 17ecd0a451e6cf143af9dac7f1c9ec6c,
