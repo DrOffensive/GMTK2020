@@ -688,7 +688,7 @@ GameObject:
   - component: {fileID: 2553698689046074614}
   - component: {fileID: 2553698689046074615}
   m_Layer: 5
-  m_Name: 'Answer The Question '
+  m_Name: ChooseRadio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -782,5 +782,4 @@ MonoBehaviour:
   toggle_prefab: {fileID: 5586528385872814277, guid: 193d6d4cec8456941bf4b60a6b2022a0,
     type: 3}
   toggles: []
-  popup: {fileID: 0}
   wrong: {fileID: 2553698687178630566}
